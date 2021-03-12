@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace UserRegistration
 {
     class Program
@@ -26,6 +26,30 @@ namespace UserRegistration
             Console.WriteLine("Enter Password");
             string Password = Console.ReadLine();
             Console.WriteLine("Password is= {0}", registration.ValidPassord("K@jal@2018"));
+
+            List<string> List = new List<string>()
+            {
+                "abc@yahoo.com",
+                "abc-100@yahoo.com",
+                "abc.100@yahoo.com",
+                "abc111@abc.com",
+                "abc-100@abc.net",
+                "abc.100@abc.com.au",
+                "abc@1.com",
+                "abc@gmail.com.com",
+                "abc+100@gmail.com"
+            };
+            foreach (string item in List)
+            {
+                if (registration.ValidEmail(item))
+                {
+                    Console.WriteLine("Valid");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid");
+                }
+            }
 
         }
     }
