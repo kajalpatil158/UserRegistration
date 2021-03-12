@@ -23,6 +23,10 @@ namespace UserRegistration
             string mobile_number = Console.ReadLine();
             Console.WriteLine("Mobile Number is= {0}", registration.ValidEmail("8600208238"));
 
+            Console.WriteLine("Enter Password");
+            string Password = Console.ReadLine();
+            Console.WriteLine("Password is= {0}", registration.ValidPassord("K@jal@2018"));
+
         }
     }
 }
