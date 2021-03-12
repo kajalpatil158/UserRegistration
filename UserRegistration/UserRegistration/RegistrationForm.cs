@@ -9,6 +9,7 @@ namespace UserRegistration
     public class RegistrationForms
     {
         string First_Name = "^[A-Za-z]";
+        string Last_Name = "^[A-Za-z]";
         public bool ValidFirstName(string firstname) => Regex.IsMatch(firstname, First_Name);
 
     }
