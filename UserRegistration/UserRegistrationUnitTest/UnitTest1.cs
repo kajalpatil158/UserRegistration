@@ -21,6 +21,13 @@ namespace UserRegistrationUnitTest
                 Assert.IsTrue(LastName);
             }
 
+        [TestMethod]
+        public void Email()
+        {
+            bool Email = form.ValidEmail("Kajalpatil158@gmail.com");
+            Assert.IsTrue(Email);
+        }
+
 
     }
 }
