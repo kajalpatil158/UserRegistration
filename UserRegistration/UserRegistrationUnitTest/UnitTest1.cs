@@ -35,6 +35,13 @@ namespace UserRegistrationUnitTest
             Assert.IsTrue(MobileNumber);
         }
 
+        [TestMethod]
+        public void PassWord()
+        {
+            bool Password = form.ValidPassord("okuftrdc");
+            Assert.IsTrue(Password);
+        }
+
 
     }
 }

@@ -25,7 +25,7 @@ namespace UserRegistration
 
             Console.WriteLine("Enter Password");
             string Password = Console.ReadLine();
-            Console.WriteLine("Password is= {0}", registration.ValidPassord("K@jal@2018"));
+            Console.WriteLine("Password is= {0}", registration.ValidPassord("pohgtfrd"));
 
             List<string> List = new List<string>()
             {
