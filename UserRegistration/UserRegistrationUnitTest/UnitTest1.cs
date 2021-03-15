@@ -10,11 +10,18 @@ namespace UserRegistrationUnitTest
         [TestMethod]
             public void FirstName()
             {
-                bool Actual= form.ValidFirstName("Kartik");
-                Assert.IsTrue(Actual);
+                bool FirstName= form.ValidFirstName("Kartik");
+                Assert.IsTrue(FirstName);
             }
 
-        
+            [TestMethod]
+            public void LastName()
+            {
+                bool LastName = form.ValidLastName("Patil");
+                Assert.IsTrue(LastName);
+            }
+
+
     }
 }
 
