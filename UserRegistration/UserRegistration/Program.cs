@@ -21,7 +21,7 @@ namespace UserRegistration
 
             Console.WriteLine("Enter Mobile Number");
             string mobile_number = Console.ReadLine();
-            Console.WriteLine("Mobile Number is= {0}", registration.ValidEmail("8600208238"));
+            Console.WriteLine("Mobile Number is= {0}", registration.ValidMobileNumber("8600208238"));
 
             Console.WriteLine("Enter Password");
             string Password = Console.ReadLine();

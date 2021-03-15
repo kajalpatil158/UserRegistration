@@ -28,7 +28,13 @@ namespace UserRegistrationUnitTest
             Assert.IsTrue(Email);
         }
 
+        [TestMethod]
+        public void Mobile()
+        {
+            bool MobileNumber = form.ValidMobileNumber("91 8600208238");
+            Assert.IsTrue(MobileNumber);
+        }
+
 
     }
 }
-

@@ -9,7 +9,7 @@ namespace UserRegistration
     public class RegistrationForms
     {
         string First_Name = "^[A-Z]{1}[A-Za-z]{2,}$";
-        string Last_Name = "^[A-Z]{1}[A-Za-z]{2,}";
+        string Last_Name = "^[A-Z]{1}[A-Za-z]{2,}$";
         string Email_Id = "^[a-z0-9A-Z]+([.#_+-][a-z0-9A-Z]+)*[@][a-z0-9A-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})*$";
         string Mobile_Number = "^[91]{2}[ ][0-9]{10,10}$";
 
