@@ -9,23 +9,23 @@ namespace UserRegistration
             RegistrationForms registration = new RegistrationForms();
             Console.WriteLine("Enter First Name");
             string Firstname = Console.ReadLine();
-            Console.WriteLine("First Name is= {0}", registration.ValidFirstName("kajal"));
+            Console.WriteLine("First Name is= {0}", registration.ValidFirstName(Firstname));
 
             Console.WriteLine("Enter Last Name");
             string Lastname = Console.ReadLine();
-            Console.WriteLine("Last Name is= {0}", registration.ValidLastName("patil"));
+            Console.WriteLine("Last Name is= {0}", registration.ValidLastName(Lastname));
 
             Console.WriteLine("Enter Email_Id");
             string email = Console.ReadLine();
-            Console.WriteLine("Email_ID is= {0}", registration.ValidEmail("kajal158@gmail.com"));
+            Console.WriteLine("Email_ID is= {0}", registration.ValidEmail(email));
 
             Console.WriteLine("Enter Mobile Number");
             string mobile_number = Console.ReadLine();
-            Console.WriteLine("Mobile Number is= {0}", registration.ValidMobileNumber("8600208238"));
+            Console.WriteLine("Mobile Number is= {0}", registration.ValidMobileNumber(mobile_number));
 
             Console.WriteLine("Enter Password");
             string Password = Console.ReadLine();
-            Console.WriteLine("Password is= {0}", registration.ValidPassord("K@jal12018"));
+            Console.WriteLine("Password is= {0}", registration.ValidPassord(Password));
 
             List<string> List = new List<string>()
             {
