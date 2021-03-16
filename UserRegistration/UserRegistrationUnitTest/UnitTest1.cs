@@ -8,39 +8,59 @@ namespace UserRegistrationUnitTest
 
         RegistrationForms form = new RegistrationForms();
         [TestMethod]
-            public void FirstName()
-            {
-                bool FirstName= form.ValidFirstName("Kartik");
-                Assert.IsTrue(FirstName);
-            }
+        public void FirstName()
+        {
+            //Arrange
+            string firstname = "Kartik";
+            //Act
+            bool FirstName = form.ValidFirstName(firstname);
+            //Assert
+            Assert.IsTrue(FirstName);
+        }
 
-            [TestMethod]
-            public void LastName()
-            {
-                bool LastName = form.ValidLastName("Patil");
-                Assert.IsTrue(LastName);
-            }
+        [TestMethod]
+        public void LastName()
+        {
+            //Arrange
+            string lastname = "patil";
+            //Act
+            bool LastName = form.ValidLastName(lastname);
+            //Assert
+            Assert.IsTrue(LastName);
+        }
 
         [TestMethod]
         public void Email()
         {
-            bool Email = form.ValidEmail("Kajalpatil158@gmail.com");
+            //Arrange
+            string email = "kajal.patil95455@yahoo.com";
+            //Act
+            bool Email = form.ValidEmail(email);
+            //Assert
             Assert.IsTrue(Email);
         }
 
         [TestMethod]
         public void Mobile()
         {
-            bool MobileNumber = form.ValidMobileNumber("91 8600208238");
+            //Arrange
+            string number = "91 8600208237";
+            //Act
+            bool MobileNumber = form.ValidMobileNumber(number);
+            //Assert
             Assert.IsTrue(MobileNumber);
         }
-    
-         [TestMethod]
-         public void PassWord()
-         {
-                bool Password = form.ValidPassord("K@jal12018");
-                Assert.IsTrue(Password);
-         }
+
+        [TestMethod]
+        public void PassWord()
+        {
+            //Arrange
+            string pass = "Kartik@2018";
+            //Act
+            bool Password = form.ValidPassord(pass);
+            //Assert
+            Assert.IsTrue(Password);
+        }
 
 
     }
