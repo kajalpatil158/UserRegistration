@@ -25,7 +25,7 @@ namespace UserRegistration
 
             Console.WriteLine("Enter Password");
             string Password = Console.ReadLine();
-            Console.WriteLine("Password is= {0}", registration.ValidPassord("pohgtfrd"));
+            Console.WriteLine("Password is= {0}", registration.ValidPassord("K@jal12018"));
 
             List<string> List = new List<string>()
             {
@@ -51,11 +51,6 @@ namespace UserRegistration
                 }
             }
 
-        }
-
-        public string ValidFirstName(string v, object firstname)
-        {
-            throw new NotImplementedException();
         }
     }
 }

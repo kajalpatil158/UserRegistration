@@ -34,13 +34,13 @@ namespace UserRegistrationUnitTest
             bool MobileNumber = form.ValidMobileNumber("91 8600208238");
             Assert.IsTrue(MobileNumber);
         }
-
-        [TestMethod]
-        public void PassWord()
-        {
-            bool Password = form.ValidPassord("okuftrdc");
-            Assert.IsTrue(Password);
-        }
+    
+         [TestMethod]
+         public void PassWord()
+         {
+                bool Password = form.ValidPassord("K@jal12018");
+                Assert.IsTrue(Password);
+         }
 
 
     }
